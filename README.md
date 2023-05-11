@@ -8,6 +8,6 @@ IC1101是一个支持多链的元宇宙，客户端有UE版本和WEB cocos 端�
 
 ###### 其他
 
-- [官网]([IC1101](https://ic1101.world/))
+- [官网](https://ic1101.world/)
 - [Twitter](https://twitter.com/IC1101World)
 - [Dicord](https://discord.gg/bSZbmeY5Jw)
