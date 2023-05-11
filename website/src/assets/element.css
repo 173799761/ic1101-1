@@ -1,0 +1,46 @@
+/* el-message */
+.el-message-box {
+    background-color: #000;
+    border: 3px solid rgba(64, 64, 64, 0.5);
+    box-shadow: 0 0 0 1px #000 inset;
+}
+
+.el-message-box__title,
+.el-message-box__message {
+    color: #fff;
+}
+
+
+/* input */
+.el-input__wrapper {
+    background-color: #000;
+    border-bottom: 1px solid #7b6dd7;
+    box-shadow: none;
+}
+
+.el-input__wrapper:hover{
+    border-bottom: 1px solid #7b6dd7;
+    box-shadow: none;
+}
+
+.el-input__wrapper.is-focus{
+    border-bottom: 1px solid #7b6dd7;
+    box-shadow: none;
+}
+
+.el-input__inner {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+  }
+
+
+  .el-textarea__inner{
+    background-color: #000;
+    border: 3px solid rgba(64, 64, 64, 0.5);
+    box-shadow: 0 0 0 1px #000 inset;
+  }
+
+.el-form-item{
+    align-items: center;
+}

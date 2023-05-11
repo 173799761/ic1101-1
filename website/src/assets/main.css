@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-color: #e8ebfd rgb(190, 190, 190);
+    scrollbar-width: thin;
+    font-family: 'Nasalization';
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear {
+    clear: both;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: rgb(26, 26, 26);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444444;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+body,
+html {
+    /* background-color: #000; */
+
+    background: linear-gradient(141deg, #000000 0%, rgba(0, 0, 0, 0.95) 12%, #020D13 27%, rgba(0, 0, 0, 0.97) 39%, #021620 60%, rgba(5, 5, 10, 0.94) 73%, #000000 100%);
+
+    /* background: url(@/assets/images/background2.jpg) no-repeat center; */
+
+    color: #fff;
+    width: 100%;
+    font-family: 'SF Pro Text Black';
+    font-size: 14px;
+    /* font-size: 62.5%; */
+    font-weight: 400;
+    /* overflow-x: hidden; */
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.font60 {
+    font-size: 60px;
+}
+
+.font36 {
+    font-size: 36px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font22 {
+    font-size: 22px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font26 {
+    font-size: 26px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.fontw {
+    font-weight: bold;
+}
+
+.tleft {
+    text-align: left;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.special-font {
+    font-family: 'ColusRegular';
+}
+
+.special-font2 {
+    font-family: 'AiDeep';
+}
+
+
+.colorf {
+    color: #fff;
+}
+
+.padL10 {
+    padding-left: 10px;
+}
+
+.marginb12 {
+    margin-bottom: 12px;
+}
+
+
+/* 公用流光效果 */
+.streamer {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.streamer:before {
+    position: absolute;
+    left: -150%;
+    /*改变left的值，让其相对box影藏*/
+    top: 0;
+    width: 30%;
+    height: 100%;
+    content: "";
+    /* Safari 5.1 - 6.0 */
+    background: -webkit-linear-gradient(left,
+            rgba(255, 255, 255, 0) 0,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.1 - 12.0 */
+    background: -o-linear-gradient(left,
+            rgba(255, 255, 255, 0) 0,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    /* Firefox 3.6 - 15 */
+    background: -moz-linear-gradient(left,
+            rgba(255, 255, 255, 0) 0,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    /* 标准的语法 */
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-30deg);
+    -webkit-animation: searchLights 5s 0s ease infinite;
+    -o-animation: searchLights 5s 0s ease infinite;
+    animation: searchLights 5s 0s ease infinite;
+}
+
+.streamer:hover:before {
+    left: 150%;
+    transition: left 1s ease 0s;
+}
+
+
+.streamer:hover {
+    filter: brightness(200%);
+}
+
+.streamer:active {
+    transform: scale(0.8);
+    filter: brightness(160%);
+}
+
+
+
+/* 公用滑动框 */
+
+.overflowScrollY {
+    overflow-y: scroll;
+}
+
+.overflowScrollY::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #61B6EB;
+}
+
+.overflowScrollY::-webkit-scrollbar-track {
+    background: #213147;
+    border-radius: 2px;
+}
+
+.overflowScrollY::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 2px;
+}
+
+.overflowScrollY::-webkit-scrollbar-thumb:hover {
+    background: #61B6EB;
+}
+
+.overflowScrollY::-webkit-scrollbar-corner {
+    background: #61B6EB;
+}
+
+
+
+/* ////////////////////////滑动出现动作/////////////////////////////////// */
+/* //开始位置在左侧20%位置 */
+.boxleftTo {
+    transform: translateX(-20%);
+    opacity: 0;
+}
+
+/* //开始位置在右侧120%位置 */
+.boxtranslateXright {
+    transform: translateX(60%);
+    opacity: 0;
+}
+
+/* //滚动到指定位置时回到原点 */
+.boxtestenterX {
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+    transition: all 1s ease;
+}
+
+/*  */
+.boxBottomTo {
+    transform: translateY(40%);
+    opacity: 0;
+}
+
+/* //滚动到指定位置时回到原点 */
+.boxtestenterY {
+    transform: translateY(0%) !important;
+    opacity: 1 !important;
+    transition: all 1s ease;
+}
+
+
+
+.b-example-divider {
+    height: 3rem;
+}
